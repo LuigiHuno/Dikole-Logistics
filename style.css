@@ -41,10 +41,13 @@ nav a:hover {
 }
 /* https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d /* 
 
+/* background: url('images/truck.jpg') no-repeat center/cover; /*
+
 /* HERO */
 .hero {
     height: 90vh;
-    background: url('images/truck.jpg') no-repeat center/cover;
+    position: relative;
+	overflow: hidden;
     color: white;
     display: flex;
     flex-direction: column;
@@ -52,6 +55,14 @@ nav a:hover {
     padding: 40px;
 }
 
+.hero-img {
+	width: 100%;
+	hieght: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	z-indent: -1;
+}
 .hero h2 {
     font-size: 45px;
     max-width: 500px;
