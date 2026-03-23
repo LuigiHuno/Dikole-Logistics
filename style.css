@@ -59,6 +59,7 @@ nav a:hover {
 	width: 100%;
 	hieght: 100%;
 	object-fit: cover;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-indent: -1;
