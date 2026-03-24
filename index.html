@@ -26,7 +26,7 @@
     <div class="hero-content reveal">
         <h2>Reliable Transport & Logistics Solutions</h2>
         <p>Fast, safe and professional delivery services across Gauteng.</p>
-        <a href="#contact" class="btn">Get a Quote</a>
+        <a href="#services" class="btn">Get a Quote</a>
     </div>
 </section>
 
@@ -36,7 +36,7 @@
     <p>Dikole Logistics provides reliable and efficient delivery solutions across Gauteng with a focus on safety and professionalism.</p>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES & QUOTE CALCULATOR -->
 <section id="services" class="services">
     <h2 class="reveal">Our Services</h2>
     <div class="service-box">
@@ -45,13 +45,10 @@
         <div class="card reveal">🏢 Business Logistics</div>
         <div class="card reveal">⚡ Fast Delivery</div>
     </div>
-</section>
 
-<!-- CONTACT / QUOTE -->
-<section id="contact" class="contact reveal">
-    <h2>Get Instant Quote</h2>
-    <div class="quote-box">
-
+    <!-- QUOTE CALCULATOR -->
+    <div class="quote-box reveal">
+        <h3>Get a Quote</h3>
         <div class="form-group">
             <label>Service Type</label>
             <select id="service">
@@ -74,21 +71,26 @@
             </select>
         </div>
 
+        <button class="btn" id="calcBtn">Calculate Quote</button>
+
         <div class="price-display">
             <h3>Estimated Price</h3>
             <p id="price">R0</p>
         </div>
-
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Additional Details..." rows="3"></textarea>
-            <button type="submit" class="btn">Submit Booking</button>
-        </form>
-
-        <p id="formMsg"></p>
     </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="contact reveal">
+    <h2>Contact / Booking Form</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Additional Details..." rows="3"></textarea>
+        <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p id="formMsg"></p>
 </section>
 
 <footer>
