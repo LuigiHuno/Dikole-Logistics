@@ -13,18 +13,20 @@ function reveal() {
     });
 }
 
-// QUOTE CALCULATOR
+// QUOTE CALCULATION FUNCTION
 function calculateQuote() {
     const service = parseInt(document.getElementById("service").value) || 0;
     const distance = parseInt(document.getElementById("distance").value) || 0;
     const urgency = parseInt(document.getElementById("urgency").value) || 0;
+
+    // Total = service base + (distance × 5) + urgency
     const total = service + (distance * 5) + urgency;
+
     document.getElementById("price").innerText = "R" + total;
 }
 
-// UPDATE QUOTE LIVE
-document.querySelectorAll("#service, #distance, #urgency")
-    .forEach(el => el.addEventListener("input", calculateQuote));
+// ATTACH BUTTON CLICK
+document.getElementById("calcBtn").addEventListener("click", calculateQuote);
 
 // FORM SUBMISSION
 document.getElementById("contactForm").addEventListener("submit", function(e) {
