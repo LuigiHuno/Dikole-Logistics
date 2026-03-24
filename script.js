@@ -25,7 +25,7 @@ function calculateQuote() {
     document.getElementById("price").innerText = "R" + total;
 }
 
-// ATTACH BUTTON CLICK
+// ATTACH BUTTON CLICK (only calculation happens when button is clicked)
 document.getElementById("calcBtn").addEventListener("click", calculateQuote);
 
 // FORM SUBMISSION
