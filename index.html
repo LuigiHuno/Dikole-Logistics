@@ -10,8 +10,9 @@
 
 <!-- NAVBAR -->
 <nav>
-    <h1>Dikole Logistics</h1>
+    <h1 class="logo">Dikole Logistics</h1>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
     <ul id="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -22,43 +23,64 @@
 
 <!-- HERO -->
 <section class="hero">
-    <img src="images/truck.jpg" alt="Truck" class="hero-img">
-    <h2>Reliable Transport & Logistics Solutions</h2>
-    <p>Fast, safe and professional delivery services across Gauteng.</p>
-    <a href="#contact" class="btn">Get a Quote</a>
+    <img src="images/truck.jpg" class="hero-img">
+
+    <div class="hero-content reveal">
+        <h2>Reliable Transport & Logistics Solutions</h2>
+        <p>Fast, safe and professional delivery services across Gauteng.</p>
+        <a href="#contact" class="btn">Get a Quote</a>
+    </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
+<section id="about" class="about reveal">
     <h2>About Us</h2>
     <p>
-        Dikole Logistics is a Gauteng-based transport company providing 
-        reliable and efficient delivery solutions. We focus on safety, 
-        professionalism, and customer satisfaction.
+        Dikole Logistics provides reliable and efficient delivery solutions
+        across Gauteng with a focus on safety and professionalism.
     </p>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services">
-    <h2>Our Services</h2>
+    <h2 class="reveal">Our Services</h2>
+
     <div class="service-box">
-        <div class="card">🚛 Goods Transportation</div>
-        <div class="card">📦 Local & Long-Distance</div>
-        <div class="card">🏢 Business Logistics</div>
-        <div class="card">⚡ Fast Delivery</div>
+        <div class="card reveal">🚛 Goods Transportation</div>
+        <div class="card reveal">📦 Local & Long-Distance</div>
+        <div class="card reveal">🏢 Business Logistics</div>
+        <div class="card reveal">⚡ Fast Delivery</div>
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT / BOOKING FORM -->
 <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +27 XXX XXX XXX</p>
-    <p>Email: info@dikolelogistics.co.za</p>
+    <h2 class="reveal">Book a Service</h2>
 
-    <a href="https://wa.me/27XXXXXXXXX" class="whatsapp-btn">Chat on WhatsApp</a>
+    <form id="contactForm" class="reveal">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option value="">Select Service</option>
+            <option>Goods Transport</option>
+            <option>Local Delivery</option>
+            <option>Long Distance</option>
+        </select>
+
+        <textarea placeholder="Additional Details..." rows="4"></textarea>
+
+        <button type="submit" class="btn">Submit Booking</button>
+    </form>
+
+    <p id="formMsg"></p>
 </section>
 
-<script src="script.js"></script>
+<footer>
+    <p>© 2026 Dikole Logistics</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
