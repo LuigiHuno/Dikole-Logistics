@@ -110,6 +110,49 @@ nav a:hover {
     transform: scale(0.95);
 }
 
+/* QUOTE BOX */
+.quote-box {
+    background: white;
+    color: black;
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* FORM GROUP */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* PRICE DISPLAY */
+.price-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#price {
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+
 /* SECTIONS */
 section {
     padding: 60px 20px;
