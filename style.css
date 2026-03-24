@@ -85,11 +85,6 @@ nav a:hover {
     max-width: 600px;
 }
 
-.hero-content p {
-	margin-top: 20px;
-
-}	
-
 .hero h2 {
     font-size: 45px;
 }
@@ -99,11 +94,11 @@ nav a:hover {
     background: orange;
     padding: 12px 25px;
     color: white;
-    margin-top: 25px;
+    margin-top: 10px;
     border-radius: 5px;
     text-decoration: none;
 	
-	transition: all 0.3s easy;
+	transition: 0.3s ease;
 }
 
 .btn:hover {
