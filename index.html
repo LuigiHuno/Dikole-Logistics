@@ -12,7 +12,6 @@
 <nav>
     <h1 class="logo">Dikole Logistics</h1>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
     <ul id="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -24,7 +23,6 @@
 <!-- HERO -->
 <section class="hero">
     <img src="images/truck.jpg" class="hero-img">
-
     <div class="hero-content reveal">
         <h2>Reliable Transport & Logistics Solutions</h2>
         <p>Fast, safe and professional delivery services across Gauteng.</p>
@@ -35,16 +33,12 @@
 <!-- ABOUT -->
 <section id="about" class="about reveal">
     <h2>About Us</h2>
-    <p>
-        Dikole Logistics provides reliable and efficient delivery solutions
-        across Gauteng with a focus on safety and professionalism.
-    </p>
+    <p>Dikole Logistics provides reliable and efficient delivery solutions across Gauteng with a focus on safety and professionalism.</p>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services">
     <h2 class="reveal">Our Services</h2>
-
     <div class="service-box">
         <div class="card reveal">🚛 Goods Transportation</div>
         <div class="card reveal">📦 Local & Long-Distance</div>
@@ -53,10 +47,9 @@
     </div>
 </section>
 
-<!-- CONTACT / BOOKING FORM -->
-<section id="contact" class="contact">
+<!-- CONTACT / QUOTE -->
+<section id="contact" class="contact reveal">
     <h2>Get Instant Quote</h2>
-
     <div class="quote-box">
 
         <div class="form-group">
@@ -86,10 +79,18 @@
             <p id="price">R0</p>
         </div>
 
-        <button class="btn" onclick="calculateQuote()">Calculate Quote</button>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Additional Details..." rows="3"></textarea>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
 
+        <p id="formMsg"></p>
     </div>
 </section>
+
 <footer>
     <p>© 2026 Dikole Logistics</p>
 </footer>
