@@ -23,7 +23,7 @@ nav a:hover { color: orange; }
 .hero p { margin-top: 20px; }
 .btn {
     display: inline-block; background: orange; padding: 12px 25px; color: white; border-radius: 5px; text-decoration: none;
-    margin-top: 25px; transition: all 0.3s ease; transform: translateY(0);
+    margin-top: 15px; transition: all 0.3s ease; transform: translateY(0);
 }
 .btn:hover { background: darkorange; color: white; transform: translateY(-5px) scale(1.05); }
 .btn:active { transform: scale(0.95); }
@@ -36,7 +36,7 @@ section { padding: 60px 20px; text-align: center; }
 .card:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
 
 /* QUOTE BOX */
-.quote-box { background: white; color: black; max-width: 400px; margin: auto; padding: 25px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); text-align: left; }
+.quote-box { background: white; color: black; max-width: 400px; margin: 30px auto; padding: 25px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); text-align: left; }
 .form-group { margin-bottom: 15px; }
 .form-group label { display: block; margin-bottom: 5px; font-size: 14px; }
 .form-group input, .form-group select, textarea { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px; }
@@ -44,7 +44,7 @@ section { padding: 60px 20px; text-align: center; }
 #price { font-size: 30px; font-weight: bold; color: orange; }
 
 /* CONTACT FORM */
-form { display: flex; flex-direction: column; gap: 10px; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto; }
 #formMsg { text-align: center; color: green; margin-top: 10px; }
 
 /* FOOTER */
