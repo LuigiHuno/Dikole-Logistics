@@ -94,18 +94,15 @@ nav a:hover {
     background: orange;
     padding: 12px 25px;
     color: white;
-    margin-top: 10px;
     border-radius: 5px;
     text-decoration: none;
-	
-	transition: 0.3s ease;
+
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-	color: darkorange;
-	transform: translateY(-5px) scale(0.85);
-	
-}	
+    background: darkorange;
+}
 
 /* SECTIONS */
 section {
