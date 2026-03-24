@@ -102,6 +102,7 @@ nav a:hover {
 }
 
 .btn:hover {
+	background: darkorange;
 	transform: translateY(-5px);
 	
 }	
