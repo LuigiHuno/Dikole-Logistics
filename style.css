@@ -43,6 +43,12 @@ section { padding: 60px 20px; text-align: center; }
 .price-display { text-align: center; margin: 20px 0; }
 #price { font-size: 30px; font-weight: bold; color: orange; }
 
+/* CENTER CALCULATE BUTTON */
+.quote-box #calcBtn {
+    display: block;
+    margin: 15px auto;
+}
+
 /* CONTACT FORM */
 form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto; }
 #formMsg { text-align: center; color: green; margin-top: 10px; }
