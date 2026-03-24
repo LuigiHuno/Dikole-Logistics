@@ -55,28 +55,41 @@
 
 <!-- CONTACT / BOOKING FORM -->
 <section id="contact" class="contact">
-    <h2 class="reveal">Book a Service</h2>
+    <h2>Get Instant Quote</h2>
 
-    <form id="contactForm" class="reveal">
-        <input type="text" placeholder="Your Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="email" placeholder="Email Address" required>
+    <div class="quote-box">
 
-        <select required>
-            <option value="">Select Service</option>
-            <option>Goods Transport</option>
-            <option>Local Delivery</option>
-            <option>Long Distance</option>
-        </select>
+        <div class="form-group">
+            <label>Service Type</label>
+            <select id="service">
+                <option value="500">Local Delivery</option>
+                <option value="1000">Long Distance</option>
+                <option value="1500">Business Logistics</option>
+            </select>
+        </div>
 
-        <textarea placeholder="Additional Details..." rows="4"></textarea>
+        <div class="form-group">
+            <label>Distance (KM)</label>
+            <input type="number" id="distance" placeholder="e.g. 50">
+        </div>
 
-        <button type="submit" class="btn">Submit Booking</button>
-    </form>
+        <div class="form-group">
+            <label>Urgency</label>
+            <select id="urgency">
+                <option value="0">Normal</option>
+                <option value="200">Express (+R200)</option>
+            </select>
+        </div>
 
-    <p id="formMsg"></p>
+        <div class="price-display">
+            <h3>Estimated Price</h3>
+            <p id="price">R0</p>
+        </div>
+
+        <button class="btn" onclick="calculateQuote()">Calculate Quote</button>
+
+    </div>
 </section>
-
 <footer>
     <p>© 2026 Dikole Logistics</p>
 </footer>
