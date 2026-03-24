@@ -102,6 +102,25 @@ nav a:hover {
 
 .btn:hover {
     background: darkorange;
+    color: white; /* keeps text white */
+    transform: translateY(-5px) scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    background: orange;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: darkorange;
+    color: white; /* keeps text white */
+    transform: translateY(-5px) scale(1.05);
 }
 
 /* SECTIONS */
